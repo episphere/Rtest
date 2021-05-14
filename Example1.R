@@ -1,5 +1,5 @@
 stopifnot( require("tidyverse") )
-stopifnot( require("ggplot") )
+stopifnot( require("ggplot2") )
 stopifnot( require("cowplot") )
 
 ## Step 1: create some data...
