@@ -19,7 +19,7 @@ zz<-map2(cluster.mean,cluster.n, ~make_cluster(.y,.x)) %>%
 
 
 ## Step 2: plot the x1,x2,x3 data...
-plot_grid( 
+p <- plot_grid( 
   zz %>% ggplot( aes(x=x1,y=x2,color=cluster)) +geom_point(),
        zz %>% ggplot( aes(x=x1,y=x3,color=cluster)) +geom_point(),
        zz %>% ggplot( aes(x=x2,y=x3,color=cluster)) +geom_point()
